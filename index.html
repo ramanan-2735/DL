@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Price Prediction</title>
+</head>
+<body>
+    <h2>House Price Prediction</h2>
+
+    <form method="POST">
+        <label>House Size:</label>
+        <input type="number" name="size" step="any" min="0.1" required>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if price is not none %}
+        <h3>Predicted Price: {{ price }} lakhs</h3>
+    {% endif %}
+</body>
+</html>
